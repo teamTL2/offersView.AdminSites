@@ -1,0 +1,157 @@
+*{
+    margin:0 auto;
+    padding:0 auto;
+    width:auto;
+}
+
+body{
+    background-color: antiquewhite;
+
+    }
+.header{
+    background-color : antiquewhite ;
+    position:relative;
+    text-align:center;
+    color:black;
+    text-shadow: 4px 4px 2px rgba(150, 150, 150, 1);
+    color: rgb(10, 3, 1);
+    font-size: 20px;
+    background-color: rgb(115, 106, 106);
+    text-shadow: rgb(255, 255, 255) 0px 0px 5px, rgb(255, 255, 255) 0px 0px 10px, rgb(255, 255, 255) 0px 0px
+    15px, rgb(219, 255, 81) 0px 0px 20px, rgb(255, 249, 180) 0px 0px 30px, rgb(255, 254, 169) 0px 0px 40px,
+    rgb(242, 255, 160) 0px 0px 50px, rgb(226, 255, 150) 0px 0px 75px;
+    border-left:2px solid darkgrey;
+    border-right:2px solid darkgrey;
+    border-bottom:2px solid darkgrey;
+    width:1000px;
+    height:100px;
+    padding:0 20px;
+    background-image:url("http://s18.postimg.org/l7yq0ir3t/pick8_1.jpg") ;
+
+
+        }
+
+#form-signin{
+    margin-bottom: 20px;
+    background-color: rgba(255, 255, 255, 0.75);
+    border: 1px solid transparent;
+    border-radius: 4px;
+    -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, .05);
+    box-shadow: 0 1px 1px rgba(0, 0, 0, .05);
+    background-color:greenyellow;
+
+}
+#log_in{
+    width: 300px;
+    height: 200px;
+
+}
+
+
+#center_box {
+    text-align:Left;
+    font-size:18px;
+    color: black;
+    font-weight:bold;
+    border-left:2px solid darkgrey;
+    border-right:2px solid darkgrey;
+    border-bottom:2px solid darkgrey;
+    margin:auto;
+    width:1000px;
+    height:551px;
+    padding:0 20px;
+    background-image:url("http://s18.postimg.org/l7yq0ir3t/pick8_1.jpg") ;
+
+
+}
+#image{
+    background-image:url("../assets/l.jpg") ;
+    width: 300px;
+    height: 150px;
+
+
+}
+.form-signin{
+    background-color: whitesmoke;
+}
+
+.form-signin .form-control {
+    position: relative;
+    font-size: 16px;
+    font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+    height: auto;
+    padding: 10px;
+    box-sizing: border-box;
+}
+.form-signin input[type="text"] {
+    margin-bottom: 5px;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+}
+.form-signin input[type="password"] {
+    margin-bottom: 10px;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+}
+#button{
+    background: #3498db;
+    background-image: -webkit-linear-gradient(top, #3498db, #2980b9);
+    background-image: -moz-linear-gradient(top, #3498db, #2980b9);
+    background-image: -ms-linear-gradient(top, #3498db, #2980b9);
+    background-image: -o-linear-gradient(top, #3498db, #2980b9);
+    background-image: linear-gradient(to bottom, #3498db, #2980b9);
+    -webkit-border-radius: 28;
+    -moz-border-radius: 28;
+    border-radius: 28px;
+    font-family: Arial;
+    color: #ffffff;
+    font-size: 20px;
+    padding: 10px 20px 10px 20px;
+    text-decoration: none;
+    cursor: pointer;
+}
+#button1{
+    background: #3498db;
+    background-image: -webkit-linear-gradient(top, #3498db, #2980b9);
+    background-image: -moz-linear-gradient(top, #3498db, #2980b9);
+    background-image: -ms-linear-gradient(top, #3498db, #2980b9);
+    background-image: -o-linear-gradient(top, #3498db, #2980b9);
+    background-image: linear-gradient(to bottom, #3498db, #2980b9);
+    -webkit-border-radius: 28;
+    -moz-border-radius: 28;
+    border-radius: 28px;
+    font-family: Arial;
+    color: #ffffff;
+    font-size: 20px;
+    padding: 10px 20px 10px 20px;
+    text-decoration: none;
+    cursor: pointer;
+
+
+}
+#form
+{
+    text-align: center;
+}
+#radio{
+    text-align: center;
+    background-color: whitesmoke;
+    height: 50px;
+    width: 300px;
+    box-shadow: 10px 10px 5px #888888;
+    border:2px solid darkgrey;
+}
+
+.footer{
+    text-align:center;
+    color:black;
+    border-left:1px solid black;
+    border-right:1px solid black;
+    border-bottom:1px solid black;
+    margin:auto;
+    width:1000px;
+    height:120px;
+    padding:0 20px;
+    background-color: darkblue;
+    background-image:url("http://s18.postimg.org/l7yq0ir3t/pick8_1.jpg") ;
+}
