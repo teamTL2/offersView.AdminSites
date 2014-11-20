@@ -1,0 +1,196 @@
+*{
+    margin:0 auto;
+    padding:0 auto;
+    width:auto;
+}
+body{
+    background-color:  antiquewhite ;
+}
+#img_header{
+    position:relative;
+    background-color: red;
+    position: relative;
+    text-align: center;
+    width:1000px;
+    height:100px;
+    padding:0 20px;
+    color: #020202;
+    font-size:40px;
+    color: rgba(0, 0, 0, 0.6);
+    font-size: 50px;
+    background-color: rgb(85, 147, 194);
+    text-shadow: rgba(0, 0, 0, 0.2) 2px 6px 5px, rgba(255, 255, 255, 0.4) 0px -4px 30px;
+    background-image:url("http://s18.postimg.org/l7yq0ir3t/pick8_1.jpg")  ;
+    border-left:2px solid darkgrey;
+    border-right:2px solid darkgrey;
+
+}
+#log
+{
+    background-image:url("http://i58.tinypic.com/2cehp8y.png")  ;
+    height: 85px;
+    width: 85px;
+    position:relative;
+    right:430px;
+    bottom:55px;
+
+}
+#paragraf{
+    text-align: left;
+    position:relative;
+    right:250px;
+    bottom:0px;
+    width:450px;
+    height:30px;
+    border-left:2px solid darkgrey;
+    border-right:2px solid darkgrey;
+    border-bottom:2px solid darkgrey;
+
+}
+#menu{
+    position:relative;
+    background-image:url("http://s18.postimg.org/l7yq0ir3t/pick8_1.jpg")  ;
+    position: relative;
+    text-align: center;
+    width:1000px;
+    height:50px;
+    padding:0 20px;
+    border-left:2px solid darkgrey;
+    border-right:2px solid darkgrey;
+    border-bottom:2px solid darkgrey;
+
+}
+.instruction{
+    font-family:Tahoma;
+    color: rgba(0, 0, 0, 0.6);
+    font-size: 22px;
+    text-shadow: 4px -2px 2px rgba(150, 150, 150, 1);
+}
+#center_box{
+    margin:auto;
+    width:1000px;
+    height:551px;
+    padding:0 20px;
+    background-image:url("http://s18.postimg.org/l7yq0ir3t/pick8_1.jpg")  ;
+    text-align: left;
+    border-left:2px solid darkgrey;
+    border-right:2px solid darkgrey;
+    border-bottom:2px solid darkgrey;
+
+}
+#lista{
+    position:relative;
+    right:280px;
+    top:2px;
+    background-color: #fffea9;
+    height: 310px;
+    width: 300px;
+    box-shadow: 10px 10px 5px #888888;
+    border:2px solid darkgrey;
+    text-align: left;
+}
+#mi{
+    position:relative;
+    left:150px;
+    bottom:200px;
+    background-color: #fffea9;
+    height: 280px;
+    width: 300px;
+    box-shadow: 10px 10px 5px #888888;
+    border:2px solid darkgrey;
+    text-align: left;
+
+}
+.small_img
+{
+    background-image:url("http://i61.tinypic.com/a770h.jpg") ;
+    background-size: 40px 40px;
+    height: 40px;
+    width: 40px;
+
+}
+#extra_help{
+    position: relative;
+    left: -10px;
+    top: 100px;
+}
+#arrow{
+
+    height: 50px;
+    width: 50px;
+    position: relative;
+    left: -250px;
+    top: 50px;
+}
+#link_for_extrahelp{
+    box-shadow: 10px 10px 5px #888888;
+    border:2px solid darkgrey;
+    height: 50px;
+    width: 150px;
+    position: relative;
+    left: -140px;
+    top: 0px;
+    background-color: #fffea9;
+
+}
+
+#hj{
+    font-size: 50px;
+    color: black;
+
+}
+#hj :visited {
+    color: #d7180f;
+    text-decoration: none;
+}
+#posdiv{
+    position:relative;
+    left:10px;
+    bottom:270px;
+}
+#footer{
+    position:relative;
+    background-image:url("http://s18.postimg.org/l7yq0ir3t/pick8_1.jpg")  ;
+    position: relative;
+    text-align: left;
+    width:1000px;
+    height:100px;
+    padding:0 20px;
+    border-left:2px solid darkgrey;
+    border-right:2px solid darkgrey;
+    border-bottom:2px solid darkgrey;
+}
+#nanList{
+
+list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+
+}
+.nav
+{
+    float: left;
+    text-align: center;
+    width: 100px;
+    border-right: 1px solid #ccc;
+}
+#navdiv{
+    float: right;
+}
+.listbtn{
+    display: block;
+    padding: 8px 15px;
+    text-decoration: none;
+    font-weight: bold;
+    color: #666666;
+    background:linear-gradient(to bottom, #fffea9 5%, #f9f9f9 100%);
+}
+#navList li a:hover{
+    color: #c00;
+    background-color: #fff;
+}
+
+
+
+
