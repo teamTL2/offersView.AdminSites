@@ -30,6 +30,7 @@ body{
     background:#717171;
     border-bottom:2px solid #313030;
 }
+/*<================Sign Up=====================>*/
 /*<----------headerWrapper------------->*/
 #headerWrapper{
     margin-left: 1px;
@@ -60,12 +61,12 @@ body{
 /*<---------mainWrapper--------------->*/
 #mainWrapper{
     max-width: 1200px;
-    height: 400px;
 }
 
-#dataWrapper{
-    float: left;
-    padding-left: 50px;
+#formDataWrapper{
+    /*ta margin auta stamatous ta perithoria de3ia kai aristera na 3efisoun apo ton Wrapper logo tou responsive design */
+    margin-left: 0;
+    margin-right: 0;
 }
 
 .pos{
@@ -115,15 +116,13 @@ body{
 }
 
 #textAreaWrapper{
-    float: right;
-    width: 50%;
+    width: 100%;
     padding-top: 20px;
 }
 
 #textArea{
-
     min-width: 380px;
-    height: 200px;
+    height: 340px;
     border: 3px solid #EBE6E2;
     border-radius: 5px;
     transition: all 0.3s ease-out;
@@ -140,7 +139,6 @@ body{
     min-height: 100px;
     text-align: center;
     padding-top: 25px;
-
 }
 
 .posAnchor{
@@ -158,10 +156,6 @@ body{
     color: #c00;
 }
 
-/*.footerAnchorMargin{
-    margin-right: 300px;
-}*/
-
 .style_BottomIcon{
     color: #666666;
 }
@@ -170,20 +164,25 @@ body{
     color: #c00;
 }
 
-/*.marginCorrection{
-    padding-bottom: 10px;
+/*<================Responsive Design=====================>*/
 
-}*/
-
-#iconAnchors{
-
+/*-----------MEDIUM--------------*/
+@media screen and (min-width: 992px) and (max-width: 1199px){
+    #dataWrapper{
+        float: left;
+    }
 }
-/*<---------Responsive Design--------->*/
+/*-----SMALL-----*/
+@media screen and (min-width: 768px) and (max-width: 991px){
+    #dataWrapper{
+        float: left;
+    }
+}
+
 /*<-------Extra Small------->*/
 @media all and (max-width: 767px){
-    #textAreaWrapper{
+    #dataWrapper{
         float: left;
-        width: 100%;
     }
 }
 
