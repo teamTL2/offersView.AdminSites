@@ -1,0 +1,185 @@
+*{
+    margin:0 auto;
+    padding:0 auto;
+    width:auto;
+}
+body{
+    background-image:url("http://s18.postimg.org/l7yq0ir3t/pick8_1.jpg")  ;
+}
+#header{
+    margin:auto;
+    position: relative;
+    width:1040px;
+    height:100px;
+    background-image:url("http://s18.postimg.org/l7yq0ir3t/pick8_1.jpg")  ;
+    border-left:2px solid darkgrey;
+    border-right:2px solid darkgrey;
+}
+#logo
+{
+    background-image:url("http://i58.tinypic.com/2cehp8y.png")  ;
+    height: 85px;
+    width: 85px;
+    position:absolute;
+    left:30px;
+    top:15px;
+}
+#menu{
+    width:1040px;
+    height:37px;
+    border-left:2px solid darkgrey;
+    border-right:2px solid darkgrey;
+    border-top:2px solid darkgrey;
+    background:linear-gradient(to bottom, #fffea9 5%, #f9f9f9 100%);
+}
+#titlossel {
+    height: 50px;
+    width: 300px;
+    position: absolute;
+    right: 400px;
+    top: 40px;
+    background-color: #fffea9;
+    box-shadow: 10px 10px 5px #888888;
+    border:2px solid darkgrey
+    text-align: center;
+    text-shadow: -4px -4px 2px rgba(150, 150, 150, 1);
+    color : #020202;
+}
+#descrip{
+    height: 40px;
+    width: 400px;
+    position: absolute;
+    right: 770px;
+    bottom: 460px;
+    text-align: center;
+    background-color: #fffea9;
+    box-shadow: 10px 10px 5px #888888;
+    border:2px solid darkgrey;
+
+}
+#descrtitl{
+    text-shadow: -4px -4px 2px rgba(150, 150, 150, 1);
+    color : #020202;
+}
+#center{
+    margin:auto;
+    width:1000px;
+    height:551px;
+    padding:0 20px;
+    background-color: antiquewhite ;
+    border-left:2px solid darkgrey;
+    border-right:2px solid darkgrey;
+}
+#slid{
+    position: absolute;
+    left: 700px;
+    top :300px;
+    width: 400px;
+    height: 400px;
+    background-image: url("http://i62.tinypic.com/aemyz9.jpg") ;
+    background-size: cover;
+    }
+#textfild{
+    position: absolute;
+    height: 300px;
+    width: 400px;
+    right: 770px;
+    bottom: 160px;
+    background-color: #fffea9;
+    box-shadow: 10px 10px 5px #888888;
+    border:2px solid darkgrey;
+}
+#titlprosforas{
+    height: 15px;
+    width: 330px;
+    position: absolute;
+    right: 70px;
+    bottom: 80px;
+    background-color: #fffea9;
+    text-align: center;
+    font-weight: bold;
+}
+.pedio{
+    background-color: rgba(165, 224, 255, 0.93);
+    height: 30px;
+    width :250px;
+    transition: all 0.3s ease-out;
+
+}
+.pedioim{
+    background-color:rgba(165, 224, 255, 0.93);
+    height: 30px;
+    width :150px;
+}
+.pedio:focus{
+    box-shadow: 0 0 5px rgba(81, 203, 238, 1);
+    padding: 3px 0px 3px 3px;
+    margin: 5px 1px 3px 0px;
+    border: 1px solid rgb(253, 255, 114);
+    outline: none;
+    font-size: 30px;
+}
+.pedioim:focus{
+    box-shadow: 0 0 5px rgba(81, 203, 238, 1);
+    padding: 3px 0px 3px 3px;
+    margin: 5px 1px 3px 0px;
+    border: 1px solid rgb(253, 255, 114);
+    outline: none;
+}
+
+
+#footer {
+    position: relative;
+    background-image: url("http://s18.postimg.org/l7yq0ir3t/pick8_1.jpg");
+    position: relative;
+    text-align: left;
+    width: 1040px;
+    height: 100px;
+    border-left:2px solid darkgrey;
+    border-right:2px solid darkgrey;
+}
+#nanList{
+
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+
+}
+.nav
+{
+    float: left;
+    text-align: center;
+    width: 100px;
+    border-right: 1px solid #ccc;
+}
+#navdiv{
+    float: right;
+}
+.listbtn{
+    display: block;
+    padding: 8px 15px;
+    text-decoration: none;
+    font-weight: bold;
+    color: #666666;
+    background:linear-gradient(to bottom, #fffea9 5%, #f9f9f9 100%);
+}
+#navList li a:hover{
+    color: #c00;
+    background-color: #fff;
+}
+#myprofile{
+    display: block;
+    padding: 9px 15px;
+    text-decoration: none;
+    font-weight: bold;
+    color: #666666;
+    background:linear-gradient(to bottom, #fffea9 5%, #f9f9f9 100%);
+    font-size: 15px;
+    border-left:1px solid darkgrey;
+
+}
+
+
+
+
