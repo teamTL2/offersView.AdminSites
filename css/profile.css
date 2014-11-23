@@ -30,6 +30,10 @@ body{
     clear: both;
 }
 
+.row{
+    margin:0 !important;
+}
+
 /*<-----------Nav Wrapper(Header)------------>*/
 #navWrapper{
     width: 100%;
@@ -73,14 +77,10 @@ body{
 }
 
 /*<---------Profile Data Wrapper(mainWrapper)--------------->*/
-#profileDataWrapper{
+#profileFormWrapper{
+    padding-top: 10px;
+    padding-bottom: 10px;
     border: 3px solid #dcdcdc;
-    margin-left: 100px;
-    float: left;
-}
-
-.profileInputPos{
-    padding-left: 10px;
 }
 
 .profileEditStyle{
@@ -95,16 +95,6 @@ body{
 .profileEditStyle:focus{
     border-color: #c00;
     outline: none;
-}
-
-#profileUpdateBtnPos{
-    padding-left: 20px;
-    float: left;
-}
-
-#profileSubmitBtnPos{
-    padding-right: 20px;
-    float: right;
 }
 
 .btnStyle{
@@ -132,29 +122,32 @@ body{
 }
 
 #textAreaWrapper{
-    float: left;
-    margin-left: 35px;
     border: 3px solid #dcdcdc;
 }
 
 #textArea{
-    min-width: 380px;
-    height: 320px;
+    min-width: 360px;
+    height: 395px;
     border: 3px solid #EBE6E2;
     border-radius: 5px;
     transition: all 0.3s ease-out;
     padding: 5px;
+    resize: vertical;
+}
+
+#textArea:focus{
+    border-color: #c00;
+    outline: none;
 }
 
 #offersListWrapper{
     float: right;
-    margin-right: 100px;
     height: auto;
     border: 2px solid #dcdcdc;
+
 }
 
 #offersList{
-    width: 100%;
     overflow: scroll;
     list-style: none;
     min-height: 390px;
@@ -200,17 +193,72 @@ body{
 .style_BottomIcon:hover{
     color: #c00;
 }
+/*=============Contact.html===========================>*/
+
+.pos{
+    text-align: center;
+    padding-top: 20px;
+}
+
+.contactEditStyle{
+    margin-bottom: 10px;
+    height: 50px;
+    width: 50%;
+    border: 3px solid #EBE6E2;
+    border-radius: 5px;
+    transition: all 0.3s ease-out;
+}
+
+.contactEditStyle:focus{
+    border-color: #c00;
+    outline: none;
+}
+
+#contactTextAreaStyle{
+    min-width: 50%;
+    height: 395px;
+    border: 3px solid #EBE6E2;
+    border-radius: 5px;
+    transition: all 0.3s ease-out;
+    padding: 5px;
+}
+
+#contactTextAreaStyle:focus{
+    border-color: #c00;
+    outline: none;
+}
+
+#contactBtn{
+    width: 150px;
+    margin-bottom: 20px;
+}
 
 /*<--------------Responsive Design--------------->*/
 
+/*-----------MEDIUM--------------*/
+@media screen and (min-width: 992px) and (max-width: 1199px){
+    #textArea{
+        resize: horizontal;
+    }
+
+    #offersListWrapper{
+        float: left;
+    }
+}
+
 /*-----SMALL-----*/
 @media screen and (min-width: 768px) and (max-width: 991px){
+    /*<---header-->*/
     #navList li{
         width: 49.9%;
     }
 
-    #offersListWrapper{
+    #textArea{
+        resize: none;
+    }
 
+    #offersListWrapper{
+        float: left;
     }
 }
 
@@ -222,6 +270,10 @@ body{
 
     #navList li{
         width: 49.9%;
+    }
+
+    #offersListWrapper{
+        float: left;
     }
 }
 

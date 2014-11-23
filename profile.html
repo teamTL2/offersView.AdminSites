@@ -14,76 +14,78 @@
             <div id="listWrapper" class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
                 <ul id="navList">
                     <li><a href="profile.html"><p>My Profile</p></a></li>
-                    <li><a href="#"><p>Contact</p></a></li>
-                    <li class="responsive"><a href="#"><p>Help</p></a></li>
-                    <li class="responsive"><a href="#"><p>About Us</p></a></li>
+                    <li><a href="contact.html"><p>Contact</p></a></li>
+                    <li><a href="#"><p>Help</p></a></li>
+                    <li><a href="#"><p>About Us</p></a></li>
                 </ul>
                 <div class="clear_float"></div>
             </div>
         </div>
         <div class="line-separator"></div>
-        <div id="profileDataWrapper">
+        <div id="profileFormWrapper" class="row">
             <form action="profileData.php" method="post" enctype="text/plain" id="profileForm">
-                    <div class="labelPos">
+                <div id="profileDataWrapper" class="col-lg-4 col-md-6">
+                    <div>
                         <label>Shop name:</label>
                     </div>
-                    <div class="profileInputPos">
+                    <div>
                         <input type="text" class="profileEditStyle" placeholder="<<Shop name>>">
                     </div>
-                    <div class="labelPos">
+                    <div>
                         <label>Password:</label>
                     </div>
-                    <div class="profileInputPos">
+                    <div>
                         <input type="password" class="profileEditStyle" placeholder="<<Password>">
                     </div>
-                    <div class="labelPos">
+                    <div>
                         <label>Street:</label>
                     </div>
-                    <div class="profileInputPos">
+                    <div>
                         <input type="text" class="profileEditStyle" placeholder="<<Street>>">
                     </div>
-                    <div class="labelPos">
+                    <div>
                         <label>E-mail:</label>
                     </div>
-                    <div class="profileInputPos">
+                    <div>
                         <input type="email" class="profileEditStyle" placeholder="<<example@gmail.com>>">
                     </div>
-                    <div class="labelPos">
+                    <div>
                         <label>Phone:</label>
                     </div>
-                    <div class="profileInputPos">
+                    <div>
                         <input type="text" class="profileEditStyle" placeholder="<<Phone>>">
                     </div>
-                    <div class="labelPos">
+                    <div>
                         <label>Write New Offer:</label>
                     </div>
-                    <div class="profileInputPos">
+                    <div>
                         <input type="text" class="profileEditStyle" placeholder="<<New Offer>>">
                     </div>
-                <div id="profileUpdateBtnPos">
-                    <input type="submit" value="Update" class="btnStyle">
+                    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+                        <input type="submit" value="Update" class="btnStyle">
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+                        <input type="submit" value="Insert Offer" class="btnStyle">
+                    </div>
                 </div>
-                <div id="profileSubmitBtnPos">
-                    <input type="submit" value="Insert Offer" class="btnStyle">
+                <div id="textAreaWrapper" class="col-lg-4 col-md-6">
+                    <div>
+                        <label>Change your shop location here:</label>
+                    </div>
+                    <div>
+                        <textarea name="map" form="profileForm" id="textArea">Here is the map for your shop location selection...</textarea>
+                    </div>
                 </div>
             </form>
-        </div>
-        <div id="textAreaWrapper">
-            <div>
-                <label>Change your shop location here:</label>
+            <div id="offersListWrapper" class="col-lg-4 col-md-4">
+                <label>All your offers is here:</label>
+                <ul id="offersList">
+                    <li><input type="text" placeholder="Offer Example"></li>
+                    <li><input type="text" placeholder="Offer Example"></li>
+                    <li><input type="text" placeholder="Offer Example"></li>
+                    <li><input type="text" placeholder="Offer Example"></li>
+                </ul>
             </div>
-            <div>
-                <textarea name="map" form="profileForm" id="textArea">Here is the map for your shop location selection...</textarea>
-            </div>
-        </div>
-        <div id="offersListWrapper">
-            <label>All your offers is here:</label>
-            <ul id="offersList">
-                <li><input type="text" placeholder="Offer Example"></li>
-                <li><input type="text" placeholder="Offer Example"></li>
-                <li><input type="text" placeholder="Offer Example"></li>
-                <li><input type="text" placeholder="Offer Example"></li>
-            </ul>
         </div>
         <div class="clear_float"></div>
         <div class="line-separator"></div>
