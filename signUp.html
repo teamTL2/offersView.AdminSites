@@ -8,80 +8,77 @@
     <link href='//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css' rel='stylesheet'>
 </head>
 <body class='background'>
-<?php
-include('ServerConnection.php');
-include('BDConnection.php');
-echo"<div id='wrapper'>;
-        <div id='headerWrapper'>
-            <div id='logoWrapper' >
-                <i class='fa fa-globe fa-4x'></i>
+<!--include('ServerConnection.php');
+include('BDConnection.php');-->
+    <div id="wrapper">
+        <div id="headerWrapper">
+            <div id="logoWrapper" >
+                    <i class="fa fa-globe fa-4x"></i>
             </div>
-            <div id='headerTextWrapper'>
-                <h1 id='title'>Offers View</h1>
-                <p id='headerText'>Sign UP!</p>
+            <div id="headerTextWrapper">
+                <h1 id="title">Offers View</h1>
+                <p id="headerText">Sign UP!</p>
             </div>
-    </div>
-<div class='clear_float'></div>
-<div class='line-separator'></div>";
-echo"<div id='mainWrapper'>
-        <div id='formDataWrapper' class='row'>
-            <form action='submit.php' method='post' enctype='text/plain' id='form'>
-                <div id='dataWrapper'class='col-lg-6 '>
-                    <div class='pos'>
-                        <input type='text' name='shopName' placeholder='Shop Name' class='editStyle'>
+        </div>
+    <div class="clear_float"></div>
+    <div id="mainWrapper">
+            <div id="formDataWrapper" class="row">
+                <form action="submit.php" method="post" enctype="text/plain" id="form">
+                    <div id="dataWrapper"class="col-lg-6 ">
+                        <div class="pos">
+                            <input type="text" name="shopName" placeholder="Shop Name" class="editStyle">
+                        </div>
+                        <div class="pos">
+                            <input type="text" name="street" placeholder="Street" class="editStyle">
+                        </div>
+                        <div class="pos">
+                            <input type="password" name="password" placeholder="Password" class="editStyle">
+                        </div>
+                        <div class="pos">
+                            <input type="password" name="reEnterPassword" placeholder="Re-enter Password" class="editStyle">
+                        </div>
+                        <div class="pos">
+                            <input type="email" name="email" placeholder="E-Mail" class="editStyle">
+                        </div>
+                        <div class="pos">
+                            <input type="text" name="phone" placeholder="Phone Number" class="editStyle">
+                        </div>
+                        <div class="pos">
+                            <input type="submit" value="Sign Up" class="btnStyle" id="btnSignUp">
+                            <input type="button" value="Exit" onclick="window.location = "#"" class="btnStyle">
+                        </div>
                     </div>
-                    <div class='pos'>
-                        <input type='text' name='street' placeholder='Street' class='editStyle'>
+                    <div id="textAreaWrapper col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                        <div>
+                            <label>Find your shop location here:</label>
+                        </div>
+                        <div>
+                            <textarea name="map" form="form" id="textArea">Here is the map for your shop location selection...</textarea>
+                        </div>
                     </div>
-                    <div class='pos'>
-                        <input type='password' name='password' placeholder='Password' class='editStyle'>
-                    </div>
-                    <div class='pos'>
-                        <input type='password' name='reEnterPassword' placeholder='Re-enter Password' class='editStyle'>
-                    </div>
-                    <div class='pos'>
-                        <input type='email' name='email' placeholder='E-Mail' class='editStyle'>
-                    </div>
-                    <div class='pos'>
-                        <input type='text' name='phone' placeholder='Phone Number' class='editStyle'>
-                    </div>
-                    <div class='pos'>
-                        <input type='submit' value='Sign Up' class='btnStyle' id='btnSignUp'>
-                        <input type='button' value='Exit' onclick='window.location = '#'' class='btnStyle'>
-                    </div>
-                </div>
-                <div id='textAreaWrapper col-lg-6 col-md-6 col-sm-6 col-xs-12'>
-                    <div>
-                        <label>Find your shop location here:</label>
-                    </div>
-                    <div>
-                        <textarea name='map' form='form' id='textArea'>Here is the map for your shop location selection...</textarea>
-                    </div>
-                </div>
-            </form>
+                </form>
+            </div>
+        </div>
+        <div class="clear_float"></div>
+        <div class="line-separator"></div>";
+    <div id="footer" class="row">
+            <div class="posAnchor col-lg-4">
+                <a href="signUp.html" class="styleFooterAnchor">Sign Up</a>
+            </div>
+            <div class="posAnchor col-lg-4">
+                <a href="#" class="styleFooterAnchor">About Us</a>
+            </div>
+            <div class="posAnchor col-lg-4 col-xs-4">
+                <i class="style_BottomIcon fa fa-facebook-square fa-lg"><a href="#" class="styleFooterAnchor">Facebook</a></i>
+            </div>
+            <div class="posAnchor col-lg-12 col-lg-offset-4 col-xs-4">
+                <i class="style_BottomIcon fa fa-linkedin-square fa-lg"><a href="#" class="styleFooterAnchor">Linkedin</a></i>
+            </div>
+            <div class="posAnchor col-lg-12 col-lg-offset-4 col-xs-4">
+                <i class="style_BottomIcon fa fa-twitter-square fa-lg"><a href="#" class="styleFooterAnchor">Twitter</a></i>
+            </div>
         </div>
     </div>
-    <div class='clear_float'></div>
-    <div class='line-separator'></div>";
-echo"<div id='footer' class='row'>
-        <div class='posAnchor col-lg-4'>
-            <a href='signUp.html' class='styleFooterAnchor'>Sign Up</a>
-        </div>
-        <div class='posAnchor col-lg-4'>
-            <a href='#' class='styleFooterAnchor'>About Us</a>
-        </div>
-        <div class='posAnchor col-lg-4 col-xs-4'>
-            <i class='style_BottomIcon fa fa-facebook-square fa-lg'><a href='#' class='styleFooterAnchor'>Facebook</a></i>
-        </div>
-        <div class='posAnchor col-lg-12 col-lg-offset-4 col-xs-4'>
-            <i class='style_BottomIcon fa fa-linkedin-square fa-lg'><a href='#' class='styleFooterAnchor'>Linkedin</a></i>
-        </div>
-        <div class='posAnchor col-lg-12 col-lg-offset-4 col-xs-4'>
-            <i class='style_BottomIcon fa fa-twitter-square fa-lg'><a href='#' class='styleFooterAnchor'>Twitter</a></i>
-        </div>
-    </div>
-</div>";
-?>
 </body>
 </html>
 
