@@ -179,6 +179,41 @@ body{
     border-left:1px solid darkgrey;
 
 }
+.styleFooterAnchor{
+    text-decoration: none;
+    color: #666666;
+    font-size: 20px;
+}
+.styleFooterAnchor:hover{
+    text-decoration: none;
+    color: #c00;
+}
+
+.style_BottomIcon{
+    color: #666666;
+}
+
+.style_BottomIcon:hover{
+    color: #c00;
+}
+#facebook{
+    background-image:url("http://i45.tinypic.com/17sif6.jpg") ;
+    background-size: 25px 25px;
+    height: 25px;
+    width: 25px;
+    position: relative;
+    bottom:22px;
+    right: 400px;
+}
+#tweeter{
+    background-image:url("http://i45.tinypic.com/15f4wnl.jpg") ;
+    background-size: 25px 25px;
+    height: 25px;
+    width: 25px;
+    position: relative;
+    bottom:25px;
+    right: 420px;
+}
 
 
 
