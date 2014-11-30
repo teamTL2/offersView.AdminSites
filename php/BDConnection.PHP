@@ -1,8 +1,8 @@
 <?php
 
-    $seldb=mysql_select_db("u992803791_offer");
+    $seldb=mysql_select_db("u519377779_offer");
     if(!$seldb) {
-    die("Could not connect to database");
+        die("Could not connect to database");
 }
 
 ?>
