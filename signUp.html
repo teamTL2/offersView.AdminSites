@@ -8,8 +8,6 @@
     <link href='//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css' rel='stylesheet'>
 </head>
 <body class='background'>
-<!--include('ServerConnection.php');
-include('BDConnection.php');-->
     <div id="wrapper">
         <div id="headerWrapper">
             <div id="logoWrapper" >
@@ -23,7 +21,7 @@ include('BDConnection.php');-->
     <div class="clear_float"></div>
     <div id="mainWrapper">
             <div id="formDataWrapper" class="row">
-                <form action="submit.php" method="post" enctype="text/plain" id="form">
+                <form action="php/signUpSubmit.php.php" method="post" enctype="text/plain" id="form">
                     <div id="dataWrapper"class="col-lg-6 ">
                         <div class="pos">
                             <input type="text" name="shopName" placeholder="Shop Name" class="editStyle">
@@ -45,7 +43,7 @@ include('BDConnection.php');-->
                         </div>
                         <div class="pos">
                             <input type="submit" value="Sign Up" class="btnStyle" id="btnSignUp">
-                            <input type="button" value="Exit" onclick="window.location = "#"" class="btnStyle">
+                            <input type="button" value="Exit" onclick="window.location='index.html'" class="btnStyle">
                         </div>
                     </div>
                     <div id="textAreaWrapper col-lg-6 col-md-6 col-sm-6 col-xs-12">
