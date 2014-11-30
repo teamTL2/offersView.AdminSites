@@ -12,7 +12,11 @@ $result = mysql_query("SELECT * FROM stoixia WHERE password = $password AND user
 $row = mysql_fetch_array($result);
 
 if($row["password"]==$password && $row["username"]==$username)
-    header ("Location:profile.html");
-else
-    echo"Sorry, your credentials are not valid, Please try again.";
+
+
+    header("Location:profile.html");
+    else
+
+        echo"try again wrong password!!!";
+
 ?>
