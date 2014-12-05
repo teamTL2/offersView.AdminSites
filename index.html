@@ -13,13 +13,13 @@
     <div id='image'>
     </div>
     <div id="log_in">
-        <form action="php/login.php" method="POST" class="form-signin">
+        <form action="php/login.php" method="post" class="form-signin">
             <fieldset>
-                <input class="form-control" placeholder="Username" id="username" type="text"><br>
-                <input class="form-control" placeholder="Password" id="password" type="password">
+                <input name="ShopName" class="form-control" placeholder="Shop Name" id="username" type="text"><br>
+                <input name="Password" class="form-control" placeholder="Password" id="password" type="password">
                 <br><br>
                 <input type="submit" id="button" value="Login »">
-                <input type="submit" id="button1" value="SingUp »">
+                <input type="button" value="Sign Up" onclick="window.location='register.php'" id="button" >
             </fieldset>
         </form>
     </div>

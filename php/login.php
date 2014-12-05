@@ -2,16 +2,16 @@
 include ('DBConnection.php');
 include ('ServerConnection.php');
 
-$username = $_REQUEST['username'];
+$username = $_REQUEST['ShopName'];
 
-$password = $_REQUEST['password'];
+$password = $_REQUEST['Password'];
 
 
-$result = mysql_query("SELECT * FROM stoixia WHERE password = $password AND username=$username");
+$result = mysql_query("SELECT * FROM Shops WHERE ShopName = $ShopName AND Password=$Password");
 
 $row = mysql_fetch_array($result);
 
-if($row["password"]==$password && $row["username"]==$username)
+if($row["ShopName"]==$ShopName && $row["Password"]==$Password)
     header ("Location:profile.html");
 else
     echo"Sorry, your credentials are not valid, Please try again.";

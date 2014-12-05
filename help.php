@@ -17,7 +17,7 @@
 
        <div id="navdiv">
        <ul style="list-style-type:none" id="navList">
-           <li class="nav"><a href="profile.html" class="listbtn"><p>My Profile</p></a></li>
+           <li class="nav"><a href="profile.php" class="listbtn"><p>My Profile</p></a></li>
            <li class="nav"><a href="contact.html" class="listbtn"><p>Contact</p></a></li>
            <li class="nav"><a href="help.html" class="listbtn"> <p>Help</p></a></li>
            <li class="nav"><a href="about.html" class="listbtn"><p>About Us</p></a></li>
