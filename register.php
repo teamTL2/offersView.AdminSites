@@ -18,32 +18,33 @@
                 <p id="headerText">Sign UP!</p>
             </div>
         </div>
-    <div class="clear_float"></div>
-    <div id="mainWrapper">
+        <div class="clear_float"></div>
+        <div class="line-separator"></div>
+        <div id="mainWrapper">
             <div id="formDataWrapper" class="row">
-                <form action="php/signUpSubmit.php.php" method="post" enctype="text/plain" id="form">
-                    <div id="dataWrapper"class="col-lg-6 ">
+                <form action="php/RegisterClass.php" method="post" id="form">
+                    <div id="dataWrapper" class="col-lg-6 ">
                         <div class="pos">
-                            <input type="text" name="shopName" placeholder="Shop Name" class="editStyle">
+                            <input type="text" name="ShopName" placeholder="Shop Name" class="editStyle">
                         </div>
                         <div class="pos">
-                            <input type="text" name="street" placeholder="Street" class="editStyle">
+                            <input type="text" name="Street" placeholder="Street" class="editStyle">
                         </div>
                         <div class="pos">
-                            <input type="password" name="password" placeholder="Password" class="editStyle">
+                            <input type="password" name="Password" placeholder="Password" class="editStyle">
                         </div>
                         <div class="pos">
                             <input type="password" name="reEnterPassword" placeholder="Re-enter Password" class="editStyle">
                         </div>
                         <div class="pos">
-                            <input type="email" name="email" placeholder="E-Mail" class="editStyle">
+                            <input type="email" name="Email" placeholder="E-Mail" class="editStyle">
                         </div>
                         <div class="pos">
-                            <input type="text" name="phone" placeholder="Phone Number" class="editStyle">
+                            <input type="text" name="Phone" placeholder="Phone Number" class="editStyle">
                         </div>
                         <div class="pos">
                             <input type="submit" value="Sign Up" class="btnStyle" id="btnSignUp">
-                            <input type="button" value="Exit" onclick="window.location='index.html'" class="btnStyle">
+                            <input type="button" value="Exit" onclick="window.location = 'index.php'" class="btnStyle">
                         </div>
                     </div>
                     <div id="textAreaWrapper col-lg-6 col-md-6 col-sm-6 col-xs-12">
@@ -58,13 +59,13 @@
             </div>
         </div>
         <div class="clear_float"></div>
-        <div class="line-separator"></div>";
-    <div id="footer" class="row">
+        <div class="line-separator"></div>
+        <div id="footer" class="row">
             <div class="posAnchor col-lg-4">
-                <a href="signUp.html" class="styleFooterAnchor">Sign Up</a>
+                <a href="register.php" class="styleFooterAnchor">Sign Up</a>
             </div>
             <div class="posAnchor col-lg-4">
-                <a href="#" class="styleFooterAnchor">About Us</a>
+                <a href="about.php" class="styleFooterAnchor">About Us</a>
             </div>
             <div class="posAnchor col-lg-4 col-xs-4">
                 <i class="style_BottomIcon fa fa-facebook-square fa-lg"><a href="#" class="styleFooterAnchor">Facebook</a></i>

@@ -7,15 +7,15 @@
  */
 
 class Users{
-    private $_Email;
+    private $_Username;
     private $_Password;
 
-    function __construct(){
+     public function __construct(){
 
     }
 
-    public function setEmail($Email){
-        $this->_Email = $Email;
+    public function setEmail($Username){
+        $this->_Username = $Username;
     }
 
     public function setPassword($Password){
@@ -23,10 +23,10 @@ class Users{
     }
 
     public function getEmail(){
-        return _Email;
+        return $this->_Username;
     }
 
     public function getPassword(){
-        return _Password;
+        return $this->_Password;
     }
 }

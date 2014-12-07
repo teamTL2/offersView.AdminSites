@@ -6,18 +6,24 @@
  * Time: 5:27 μμ
  */
 
-class Shops
+class Shops // Tha prepei na ginei Singleton
 {
+    private $_Shop_ID;
     private $_ShopName;
     private $_Street;
     private $_Password;
     private $_Email;
     private $_Phone;
+    private $_Offer;
     private $_Longitude;//geografiko mikos
     private $_Latitude;//geografiko platos
 
-    function __construct(){
+    public  function __construct(){
 
+    }
+
+    public function setShop_ID($Shop_ID){
+        $this->_Shop_ID = $Shop_ID;
     }
 
     public function setShopName($ShopName){
@@ -40,6 +46,10 @@ class Shops
         $this->_Phone = $Phone;
     }
 
+    public function setOffer($Offer){
+        $this->_Offer = $Offer;
+    }
+
     public function setLongitude($Longitude){
         $this->_Longitude = $Longitude;
     }
@@ -48,32 +58,40 @@ class Shops
         $this->_Latitude = $Latitude;
     }
 
+    public function getShop_ID(){
+        return $this->_Shop_ID;
+    }
+
     public function getShopName(){
-        return _ShopName;
+        return $this->_ShopName;
     }
 
     public function getStreet(){
-        return _Street;
+        return $this->_Street;
     }
 
     public function getPassword(){
-        return _Password;
+        return $this->_Password;
     }
 
     public function getEmail(){
-        return _Email;
+        return $this->_Email;
     }
 
     public function getPhone(){
-        return _Phone;
+        return $this->_Phone;
+    }
+
+    public function getOffer(){
+        return $this->_Offer;
     }
 
     public function getLongitude(){
-        return _Longitude;
+        return $this->_Longitude;
     }
 
     public function getLatitude(){
-        return _Latitude;
+        return $this->_Latitude;
     }
 
 }
