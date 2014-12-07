@@ -13,7 +13,7 @@ class ProductOffers {
     private $_StartingDate;
     private $_ExpirationDate;
 
-    function __construct(){
+    public function __construct(){
 
     }
 
@@ -38,23 +38,23 @@ class ProductOffers {
     }
 
     public function getIDProductOffer(){
-        return _IDProductOffer;
+        return $this->_IDProductOffer;
     }
 
     public function getProductName(){
-        return _ProductName;
+        return $this->_ProductName;
     }
 
     public function getOffer(){
-        return _Offer;
+        return  $this->_Offer;
     }
 
     public function getStartingDate(){
-        return _StartingDate;
+        return  $this->_StartingDate;
     }
 
     public function getExpirationDate(){
-        return _ExpirationDate;
+        return  $this->_ExpirationDate;
     }
 
 } 
