@@ -1,9 +1,9 @@
 <?php
 /**
  * Created by PhpStorm.
- * User: wolf
+ * User: user
  * Date: 5/12/2014
- * Time: 4:58 μμ
+ * Time: 3:12 μμ
  */
 session_start();
 require_once('DBConnection.php');
