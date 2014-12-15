@@ -24,18 +24,18 @@
         <div class="line-separator"></div>
         <div id="mainWrapper">
             <div id="contactFormWrapper">
-                <form action="php/ContactClass.php" method="post" enctype="text/plain" id="profileForm">
+                <form action="php/ContactClass.php" method="post" id="profileForm">
                     <div class="pos">
                         <input type="text" name="ShopName" placeholder="Shop Name" class="contactEditStyle">
                     </div>
                     <div class="pos">
-                        <input type="email" name="Email" placeholder="E-mail" class="contactEditStyle">
+                        <input type="email" name="fromEmail" placeholder="E-mail" class="contactEditStyle">
                     </div>
                     <div class="pos">
-                        <textarea name="textArea" placeholder="Write your message here:" id="contactTextAreaStyle" rows="12" cols="12"></textarea>
+                        <textarea name="messageArea" placeholder="Write your message here:" id="contactTextAreaStyle" rows="12" cols="12"></textarea>
                     </div>
                     <div class="pos">
-                        <input type="button" value="Send" class="btnStyle" id="contactBtn">
+                        <input type="submit" value="Send" class="btnStyle" id="contactBtn">
                     </div>
                 </form>
             </div>

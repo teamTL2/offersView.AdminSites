@@ -7,7 +7,7 @@
 </head>
 <body >
 <div class='header' >
-    <h1>wellcome><br> to offers page</h1>
+    <h1><a href="http://www.auplod.com/i-lupoad430b3.html"><img src="http://www.auplod.com/u/lupoad430b3.gif" alt="Image" border="0" /></a><br> to offers page</h1>
 </div>
 <div id='center_box'  >
     <div id='image'>

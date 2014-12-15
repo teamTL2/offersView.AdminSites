@@ -7,15 +7,15 @@
  */
 
 class DBConnection {
-    /*protected  $hostName = 'localhost';
-    protected  $userName = 'root';
-    protected  $passCode = '';
-    protected  $dbName = 'teotest';*/
+//    protected  $hostName = 'localhost';
+//    protected  $userName = 'root';
+//    protected  $passCode = '';
+//    protected  $dbName = 'teotest';
     public  $myconn;
-    protected $hostName = 'localhost';
-    protected  $userName = 'root';
-    protected  $passCode = '';
-    protected  $dbName = 'teotest';
+    protected $hostName = 'mysql.serversfree.com';
+    protected $userName = 'u519377779_admin';
+    protected $passCode = 'ulven1991247';
+    protected $dbName = 'u519377779_offer';
 
     function __construct(){
 

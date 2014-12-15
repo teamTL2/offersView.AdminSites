@@ -14,7 +14,6 @@ class Shops // Tha prepei na ginei Singleton
     private $_Password;
     private $_Email;
     private $_Phone;
-    private $_Offer;
     private $_Longitude;//geografiko mikos
     private $_Latitude;//geografiko platos
 
@@ -44,10 +43,6 @@ class Shops // Tha prepei na ginei Singleton
 
     public function setPhone($Phone){
         $this->_Phone = $Phone;
-    }
-
-    public function setOffer($Offer){
-        $this->_Offer = $Offer;
     }
 
     public function setLongitude($Longitude){
@@ -80,10 +75,6 @@ class Shops // Tha prepei na ginei Singleton
 
     public function getPhone(){
         return $this->_Phone;
-    }
-
-    public function getOffer(){
-        return $this->_Offer;
     }
 
     public function getLongitude(){

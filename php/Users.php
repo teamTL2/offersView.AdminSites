@@ -14,7 +14,7 @@ class Users{
 
     }
 
-    public function setEmail($Username){
+    public function setUsername($Username){
         $this->_Username = $Username;
     }
 
@@ -22,7 +22,7 @@ class Users{
         $this->_Password = $Password;
     }
 
-    public function getEmail(){
+    public function getUsername(){
         return $this->_Username;
     }
 

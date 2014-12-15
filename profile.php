@@ -6,6 +6,7 @@
  * Time: 11:15 πμ
  */
 session_start();
+//TA SESSION DN TA KANW UNSET H DESTROY GT THELW NA EMFANIZONTE KAI META APO RELOAD TIS SELIDAS!!
 ?>
 <!DOCTYPE html>
 <html>
@@ -15,6 +16,7 @@ session_start();
     <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
     <link rel="stylesheet" type="text/css" href="js/bootstrap.js">
     <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC9rRl5h4ffBhsKVaBij7MwB-snr1JWipc"></script>
 </head>
 <body class="background">
     <div id="wrapper">
@@ -68,31 +70,33 @@ session_start();
                         <label>Write New Offer:</label>
                     </div>
                     <div>
-                        <input type="text" name="Offer" class="profileEditStyle" placeholder="<<New Offer>>">
+                        <input type="text" name="Offer" class="profileEditStyle">
                     </div>
                     <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
                         <input type="submit" name="Update" value="Update" class="btnStyle">
                     </div>
                     <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
-                        <input type="submit" name="Insert" value="Insert Offer" class="btnStyle">
+                        <input type="submit" name="Insert" value="Insert Offer" class="btnStyle" id="btnInsertOffer">
+                    </div>
+                    <div class="col-lg-6" id="exit">
+                        <input type="button" value="Exit" onclick="window.location = 'index.php'" class="btnStyle">
                     </div>
                 </div>
                 <div id="textAreaWrapper" class="col-lg-4 col-md-6">
                     <div>
                         <label>Change your shop location here:</label>
                     </div>
-                    <div>
-                        <textarea name="map" form="profileForm" id="textArea">Here is the map for your shop location selection...</textarea>
+                    <div id="map-canvas">
+
                     </div>
+                    <input type="hidden" name="Longitude" id="longitude" value="<?php echo $_SESSION['Longitude']; ?>">
+                    <input type="hidden" name="Latitude" id="latitude" value="<?php echo $_SESSION['Latitude']; ?>">
                 </div>
             </form>
             <div id="offersListWrapper" class="col-lg-4 col-md-4">
                 <label>All your offers is here:</label>
                 <ul id="offersList">
-                    <li><input type="text" placeholder="Offer Example"></li>
-                    <li><input type="text" placeholder="Offer Example"></li>
-                    <li><input type="text" placeholder="Offer Example"></li>
-                    <li><input type="text" placeholder="Offer Example"></li>
+
                 </ul>
             </div>
         </div>
@@ -116,5 +120,6 @@ session_start();
             </div>
         </div>
     </div>
+<script type="text/javascript" src="js/mapProfile.js"></script>
 </body>
 </html>

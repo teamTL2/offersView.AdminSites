@@ -6,14 +6,15 @@
     <link rel='stylesheet' type='text/css' href='css/bootstrap.css'>
     <link rel='stylesheet' type='text/css' href='js/bootstrap.js'>
     <link href='//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css' rel='stylesheet'>
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC9rRl5h4ffBhsKVaBij7MwB-snr1JWipc"></script>
 </head>
 <body class='background'>
     <div id="wrapper">
-        <div id="headerWrapper">
+        <div id="headerWrapper" class="row">
             <div id="logoWrapper" >
-                <i class="fa fa-globe fa-4x"></i>
+                <a href="register.php" class="col-lg-6 col-md-6 col-sm-6 col-xs-12"><img src="assets/logo1.png" alt="this is a logo" id="logoImg" class="img-responsive"></a>
             </div>
-            <div id="headerTextWrapper">
+            <div id="headerTextWrapper"  class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
                 <h1 id="title">Offers View</h1>
                 <p id="headerText">Sign UP!</p>
             </div>
@@ -51,9 +52,11 @@
                         <div>
                             <label>Find your shop location here:</label>
                         </div>
-                        <div>
-                            <textarea name="map" form="form" id="textArea">Here is the map for your shop location selection...</textarea>
+                        <div id="map-canvas">
+
                         </div>
+                        <input type="hidden" name="Longitude" id="longitude">
+                        <input type="hidden" name="Latitude" id="latitude">
                     </div>
                 </form>
             </div>
@@ -78,6 +81,7 @@
             </div>
         </div>
     </div>
+<script type="text/javascript" src="js/mapRegister.js"></script>
 </body>
 </html>
 
