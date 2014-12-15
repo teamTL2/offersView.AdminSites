@@ -13,13 +13,13 @@
     <div id='image'>
     </div>
     <div id="log_in">
-        <form accept-charset="UTF-8" role="form" class="form-signin">
+        <form action="php/LoginClass.php" method="post" class="form-signin">
             <fieldset>
-                <input class="form-control" placeholder="Username" id="username" type="text"><br>
-                <input class="form-control" placeholder="Password" id="password" type="password">
+                <input class="form-control" name="ShopName" placeholder="Shop Name" id="username" type="text"><br>
+                <input class="form-control" name="Password" placeholder="Password" id="password" type="password">
                 <br><br>
-                <input type="submit" id="button" value="Login »">
-                <input type="submit" id="button1" value="SingUp »">
+                <input type="submit" id="btnLoginIndex" value="Login" class="styleBtnIndex">
+                <input type="button" id="btnSignupIndex" value="SignUp" class="styleBtnIndex" onclick="window.location.href='register.php'">
             </fieldset>
         </form>
     </div>
@@ -32,3 +32,75 @@
 </div>
 </body>
 </html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
