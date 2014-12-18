@@ -23,11 +23,21 @@ class LoginClass {
         if(!$this->_ShopName || !$this->_Password) {
             die("<p>Please enter all your Shop data in the fields</p>");
         }else {
-            $stmt = $this->_connection->dbConnect()->prepare("SELECT ShopName, Street, Password, Email, Phone FROM shops WHERE ShopName = ? AND Password = ? ");
+            $stmt = $this->_connection->dbConnect()->prepare("SELECT ShopName, Street, Password, Email, Phone, Longitude, Latitude FROM shops WHERE ShopName = ? AND Password = ? ");
             $stmt->bind_param('ss', $this->_ShopName, $this->_Password);
             $stmt->execute();
-            $stmt->bind_result($_SESSION['ShopName'], $_SESSION['Street'], $_SESSION['Password'], $_SESSION['Email'], $_SESSION['Phone']);
+            $stmt->bind_result($ShopName, $Street, $Password, $Email, $Phone ,$Longitude, $Latitude);
+            while($stmt->fetch()){
+                $_SESSION['ShopName'] = $ShopName;
+                $_SESSION['Street'] = $Street;
+                $_SESSION['Password'] = $Password;
+                $_SESSION['Email'] = $Email;
+                $_SESSION['Phone'] = $Phone;
+                $_SESSION['Longitude'] = $Longitude;
+                $_SESSION['Latitude'] = $Latitude;
+            }
             $stmt->close();
+            $this->_connection->dbClose();
         }
     }
 
