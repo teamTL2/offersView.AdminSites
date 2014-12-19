@@ -8,12 +8,12 @@
  * Antistoixa stin sinartisi testLogin leitourgoun mono me toSeleniumTestCase...
  *
  * Gt bgazei lathos ta asserts einai agnwsto...
- *
- * Den mporei na sindethei ston selenium server(otan trexei apo cmd..)
+
  */
 
 class LoginTest extends PHPUnit_Extensions_SeleniumTestCase{
-    protected function setUp(){
+    protected function setUp()
+    {
         $this->setBrowser("*chrome");
         $this->setBrowserUrl("http://offesview.bugs3.com/");
         $this->setHost('localhost');
