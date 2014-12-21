@@ -36,14 +36,14 @@ body{
 }
 #titlossel {
     height: 50px;
-    width: 200px;
+    width: 228px;
     position: absolute;
     right: 400px;
     top: 40px;
     background-color: #fffea9;
     box-shadow: 10px 10px 5px #888888;
     border:2px solid darkgrey
-    text-align: center;
+text-align: center;
     text-shadow: -4px -4px 2px rgba(150, 150, 150, 1);
     color : #020202;
 }
@@ -230,13 +230,15 @@ span:after {
     bottom:25px;
     right: 420px;
 }
+
+
 #ellinikadiv{
     height: 50px;
     width: 100px;
     position: relative;
-    left: 490px;
+    left: 485px;
     bottom: 715px;
-    background-image: url("http://i42.tinypic.com/2r7t05j.jpg");
+    background-image: url("http://i58.tinypic.com/k0ko0o.png");
     background-repeat:no-repeat;
     background-size:contain;
 
@@ -255,11 +257,8 @@ span:after {
     height: 15px;
     width: 110px;
     position: relative;
-    left: 380px;
+    left: 370px;
     bottom: 700px;
     background-color: #e9e9e9;;
 
 }
-
-
-
