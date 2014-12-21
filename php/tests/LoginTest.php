@@ -28,8 +28,8 @@ class LoginTest extends PHPUnit_Extensions_SeleniumTestCase{
         $this->waitForPageToLoad("30000");
         $this->click("css=#exit > input.btnStyle");
         $this->waitForPageToLoad("30000");
-        $this->assertEquals("teo", $this->getText("id=username")); //Returns the text of the element.Gets the text of an element.
-        $this->assertEquals("123", $this->getText("id=password"));
+        $this->assertEquals("Souzi", $this->getText("id=username")); //Returns the text of the element.Gets the text of an element.
+        $this->assertEquals("000", $this->getText("id=password"));
         $this->assertTrue($this->isElementPresent("id=username")); //Returns:true if the element is present, false otherwise.Verifies that the specified element is somewhere on the page.
         $this->assertTrue($this->isElementPresent("id=password"));
     }
