@@ -20,6 +20,26 @@ class RegisterClass{
     }
 
     /*
+    * kanei insert to ta stoixeia tou shop mas stin basi ston pinaka shops.
+    */
+    public function registerSubmit(){
+        if (!$_POST['ShopName'] || !$_POST['Street'] || !$_POST['Password'] || !$_POST['Email'] || !$_POST['Phone'] || $_POST['Password'] != $_POST['reEnterPassword']
+            || !$_POST['Longitude'] || !$_POST['Latitude']) {
+            echo ("<SCRIPT LANGUAGE='JavaScript'>
+                        window.alert('Please enter all your Shop data in the fields and choose your shop location.')
+                        window.location.href='http://offesview.bugs3.com/register.php';
+                        </SCRIPT>");
+            exit;
+        }else {
+            $stmt = $this->_connection->dbConnect()->prepare("INSERT INTO shops (ShopName, Street, Password, Email, Phone, Longitude, Latitude) VALUES(?,?,?,?,?,?,?)");
+            $stmt->bind_param('ssssidd', $_POST['ShopName'], $_POST['Street'], $_POST['Password'], $_POST['Email'], $_POST['Phone'], $_POST['Longitude'], $_POST['Latitude']);
+        }
+        $stmt->execute();
+        $stmt->close();
+        $this->_connection->dbClose();
+    }
+
+    /*
      * bazei times stous setters tou shop(to arxikopiei).
      */
     public function setDataShop(){
@@ -59,23 +79,6 @@ class RegisterClass{
         $_SESSION['Phone'] = $this->shop->getPhone();
         $_SESSION['Longitude'] = $this->shop->getLongitude();
         $_SESSION['Latitude'] = $this->shop->getLatitude();
-    }
-
-    /*
-     * kanei insert to ta stoixeia tou shop mas stin basi ston pinaka shops.
-     */
-    public function registerSubmit(){
-        if (!$_POST['ShopName'] || !$_POST['Street'] || !$_POST['Password'] || !$_POST['Email'] || !$_POST['Phone'] || $_POST['Password'] != $_POST['reEnterPassword']
-            || !$_POST['Longitude'] || !$_POST['Latitude']) {
-                die("<p>Please enter all your Shop data in the fields and choose your shop location</p>");
-                //echo '<script type="text/javascript"> alert("sjkfhsd");</script>';
-        }else {
-            $stmt = $this->_connection->dbConnect()->prepare("INSERT INTO shops (ShopName, Street, Password, Email, Phone, Longitude, Latitude) VALUES(?,?,?,?,?,?,?)");
-            $stmt->bind_param('ssssidd', $_POST['ShopName'], $_POST['Street'], $_POST['Password'], $_POST['Email'], $_POST['Phone'], $_POST['Longitude'], $_POST['Latitude']);
-        }
-        $stmt->execute();
-        $stmt->close();
-        $this->_connection->dbClose();
     }
 
     /*

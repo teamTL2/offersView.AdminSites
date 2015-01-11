@@ -20,9 +20,12 @@ class ContactClass {
         $to = "theodamia@gmail.com";
         $subject = "OffersView-Email";
         $message = $_POST['messageArea'];
-        $headers = "From:" .$_POST['fromEmail'];
-        mail($to,$subject,$message, $headers);
+        $fromEmail = $_POST['fromEmail'];
+        //$headers = 'From: '.$_POST['ShopName'];
+        mail($to,$subject,$message, $fromEmail);
     }
 }
+
 $newEmail = new ContactClass();
 $newEmail->sendEmail();
+header("Location: http://offesview.bugs3.com/contact.php");
