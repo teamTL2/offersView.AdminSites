@@ -4,11 +4,10 @@
     width:auto;
 }
 body{
-    background-color:  antiquewhite ;
+    background-image:url("http://s18.postimg.org/l7yq0ir3t/pick8_1.jpg")  ;
 }
 #img_header{
     position:relative;
-    background-color: red;
     position: relative;
     text-align: center;
     width:1000px;
@@ -20,7 +19,8 @@ body{
     font-size: 50px;
     background-color: rgb(85, 147, 194);
     text-shadow: rgba(0, 0, 0, 0.2) 2px 6px 5px, rgba(255, 255, 255, 0.4) 0px -4px 30px;
-    background-image:url("http://s18.postimg.org/l7yq0ir3t/pick8_1.jpg")  ;
+
+    background-color:  #e9e9e9; ;
     border-left:2px solid darkgrey;
     border-right:2px solid darkgrey;
 
@@ -48,16 +48,13 @@ body{
 
 }
 #menu{
-    position:relative;
-    background-image:url("http://s18.postimg.org/l7yq0ir3t/pick8_1.jpg")  ;
-    position: relative;
-    text-align: center;
-    width:1000px;
-    height:50px;
-    padding:0 20px;
+    width:1040px;
+    height:37px;
     border-left:2px solid darkgrey;
     border-right:2px solid darkgrey;
+    border-top:2px solid darkgrey;
     border-bottom:2px solid darkgrey;
+    background:linear-gradient(to bottom, #fffea9 5%, #f9f9f9 100%);
 
 }
 .instruction{
@@ -71,7 +68,7 @@ body{
     width:1000px;
     height:551px;
     padding:0 20px;
-    background-image:url("http://s18.postimg.org/l7yq0ir3t/pick8_1.jpg")  ;
+    background-color:  #e9e9e9; ;
     text-align: left;
     border-left:2px solid darkgrey;
     border-right:2px solid darkgrey;
@@ -150,7 +147,7 @@ body{
 }
 #footer{
     position:relative;
-    background-image:url("http://s18.postimg.org/l7yq0ir3t/pick8_1.jpg")  ;
+    background-color:  #e9e9e9; ;
     position: relative;
     text-align: left;
     width:1000px;
@@ -186,10 +183,90 @@ list-style-type: none;
     color: #666666;
     background:linear-gradient(to bottom, #fffea9 5%, #f9f9f9 100%);
 }
+.m{
+    display: block;
+    padding: 8px 15px;
+    width: 80px;
+    text-decoration: none;
+    font-weight: bold;
+    color: #666666;
+    background:linear-gradient(to bottom, #fffea9 5%, #f9f9f9 100%);
+    border-right: 1px solid #ccc;
+    position:relative;
+    left:-10px;
+    top:0px;
+
+}
 #navList li a:hover{
     color: #c00;
     background-color: #fff;
 }
+.styleFooterAnchor{
+    text-decoration: none;
+    color: #666666;
+    font-size: 20px;
+}
+.styleFooterAnchor:hover{
+    text-decoration: none;
+    color: #c00;
+}
+
+.style_BottomIcon{
+    color: #666666;
+}
+
+.style_BottomIcon:hover{
+    color: #c00;
+}
+#facebook{
+    background-color:  #e9e9e9; ;
+    background-size: 25px 25px;
+    height: 25px;
+    width: 25px;
+    position: relative;
+    bottom:22px;
+    right: 400px;
+}
+#tweeter{
+    background-color:#e9e9e9; ;
+    background-size: 25px 25px;
+    height: 25px;
+    width: 25px;
+    position: relative;
+    bottom:25px;
+    right: 420px;
+}
+#ellinikadiv{
+    height: 50px;
+    width: 100px;
+    position: relative;
+    left: 490px;
+    bottom: 790px;
+    background-image: url("http://i42.tinypic.com/2r7t05j.jpg");
+    background-repeat:no-repeat;
+    background-size:contain;
+
+}
+#ellinika{
+    color: rgb(255, 255, 255);
+    font-size: 15px;
+    background-color: rgb(51, 51, 51);
+    text-shadow: rgb(255, 255, 255)
+    0px 0px 5px, rgb(255, 255, 255) 0px 0px 10px,
+    rgb(255, 255, 255) 0px 0px 15px, rgb(255, 254, 169) 0px 0px 20px, rgb(255, 254, 169)
+    0px 0px 30px, rgb(255, 45, 149) 0px 0px 40px, rgb(123, 233, 255) 0px 0px 50px, rgb(255, 45, 149) 0px 0px 75px;
+
+}
+#epilogi{
+    height: 15px;
+    width: 110px;
+    position: relative;
+    left: 380px;
+    bottom: 774px;
+    background-color: #e9e9e9;;
+
+}
+
 
 
 
