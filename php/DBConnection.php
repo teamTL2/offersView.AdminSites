@@ -21,7 +21,7 @@ class DBConnection {
 
     }
 
-    public function dbConnect(){
+    public   function dbConnect(){
         $this ->myconn = new mysqli($this->hostName,$this->userName,$this->passCode,$this->dbName);
         if(mysqli_connect_errno()){
             printf("Connection failed: %s \n", mysqli_connect_error());

@@ -17,7 +17,7 @@
 
        <div id="navdiv">
        <ul style="list-style-type:none" id="navList">
-           <li class="nav"><a href="profile.php" class="m"><p>My Profile</p></a></li>
+           <li class="nav"><a href="profile.php" class="listbtn"><p>My Profile</p></a></li>
            <li class="nav"><a href="contact.php" class="listbtn"><p>Contact</p></a></li>
            <li class="nav"><a href="help.php" class="listbtn"> <p>Help</p></a></li>
            <li class="nav"><a href="about.php" class="listbtn"><p>About Us</p></a></li>
@@ -91,10 +91,6 @@
             <div id="link_for_extrahelp">
                 <a href="www.google.com" id="hj"><p>video</p></a>
             </div>
-                    </div>
-                    <div id="epilogi"><p>ΜΕΤΑΦΡΑΣΤΕ:</p></div>
-                   <div id="ellinikadiv">
-              <a href="greekhelp.php" id="ellinika" > <p>ΕΛΛΗΝΙΚΑ</p></a>
                     </div>
 
 </div>

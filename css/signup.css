@@ -37,11 +37,10 @@ body{
     width: 100%;
     height: auto;
 }
-#logoWrapper{
-    width: 50px;
-    float: left;
-    padding-top: 25px;
-    padding-left: 5px;
+
+#logoImg{
+    margin-top: 10px;
+    margin-left: 10px;
 }
 
 #headerTextWrapper{
@@ -120,19 +119,18 @@ body{
     padding-top: 20px;
 }
 
-#textArea{
-    min-width: 380px;
+#map-canvas{
+    width: 50%;
     height: 340px;
-    border: 3px solid #EBE6E2;
-    border-radius: 5px;
     transition: all 0.3s ease-out;
-    padding: 5px;
+    border: 3px solid #EBE6E2;
 }
 
-#textArea:focus{
+#map-canvas:hover{
     border-color: #c00;
     outline: none;
 }
+
 /*<---------------footer------------>*/
 #footer{
     width: 100%;

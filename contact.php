@@ -1,4 +1,7 @@
 <!DOCTYPE html>
+<?php
+    include_once('php/ProfileData.php');
+?>
 <html>
 <head>
     <title>Offers View</title>
@@ -26,10 +29,10 @@
             <div id="contactFormWrapper">
                 <form action="php/ContactClass.php" method="post" id="profileForm">
                     <div class="pos">
-                        <input type="text" name="ShopName" placeholder="Shop Name" class="contactEditStyle">
+                        <input type="text" name="ShopName" class="contactEditStyle" value="<?php echo $_SESSION['ShopName']; ?>">
                     </div>
                     <div class="pos">
-                        <input type="email" name="fromEmail" placeholder="E-mail" class="contactEditStyle">
+                        <input type="email" name="fromEmail" class="contactEditStyle" value="<?php echo $_SESSION['Email']; ?>">
                     </div>
                     <div class="pos">
                         <textarea name="messageArea" placeholder="Write your message here:" id="contactTextAreaStyle" rows="12" cols="12"></textarea>

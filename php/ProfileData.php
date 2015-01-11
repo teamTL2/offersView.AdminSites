@@ -33,7 +33,11 @@ class ProfileData
      */
     public function mergeShopID(){
         if(!$_POST['Offer']){
-            die("<p>Please enter your Offer</p>");
+            echo ("<SCRIPT LANGUAGE='JavaScript'>
+                    window.alert('Please enter your Offer')
+                    window.location.href='http://offesview.bugs3.com/profile.php';
+                    </SCRIPT>");
+            exit;
         }else {
             $stmtShopID = $this->_connection->dbConnect()->prepare("INSERT INTO offers (Shop_ID) SELECT Shop_ID FROM shops WHERE ShopName = ?");
             $stmtShopID->bind_param('s', $_POST['ShopName']);
@@ -69,21 +73,6 @@ class ProfileData
         //header("Location: http://localhost/offersView.AdminSites/profile.php");
         header("Location: http://offesview.bugs3.com/profile.php");
     }
-
-    /*
-     * pernei ta offers enos sigekrimenou shop(me basi to Shop_ID tou) gia tin offersList.
-     */
-    public function takeOffers(){
-        $stmt = $this->_connection->dbConnect()->prepare("SELECT Offer FROM offers WHERE Shop_ID = ? ");
-        $stmt->bind_param('i',$this->_Offer->getShop_ID());
-        $stmt->execute();
-        $stmt->bind_result($offers);
-        while($stmt->fetch()){
-            $this->_Offer->setOffer($offers);
-        }
-        $stmt->close();
-        $this->_connection->dbClose();
-    }
     
     /*
      * 3ana-settarei ta session me ta kainourgia dedomena pou ebale o xristis(shop).
@@ -104,7 +93,11 @@ class ProfileData
     public function updateProfileData(){
         if (!$_POST['ShopName'] || !$_POST['Street'] || !$_POST['Password'] || !$_POST['Email'] || !$_POST['Phone']
             || !$_POST['Longitude'] || !$_POST['Latitude']) {
-                die("<p>Please enter all your Shop data in the fields and choose your shop location</p>");
+                echo ("<SCRIPT LANGUAGE='JavaScript'>
+                        window.alert('Please enter all your Shop data in the fields and choose your shop location.')
+                        window.location.href='http://offesview.bugs3.com/profile.php';
+                        </SCRIPT>");
+                exit;
         }else{
             $stmt = $this->_connection->dbConnect()->prepare("UPDATE shops SET ShopName = ?, Street = ?, Password = ? , Email = ?, Phone = ?, Longitude = ?, Latitude = ? WHERE Shop_ID = ?");
             $stmt->bind_param('ssssiddi', $_SESSION['ShopName'], $_SESSION['Street'], $_SESSION['Password'], $_SESSION['Email'], $_SESSION['Phone'], $_SESSION['Longitude'],
@@ -115,6 +108,25 @@ class ProfileData
             //header("Location: http://localhost/offersView.AdminSites/profile.php");
             header("Location: http://offesview.bugs3.com/profile.php");
         }
+    }
+
+    /*
+     * pernei ta offers enos sigekrimenou shop(me basi to Shop_ID tou) gia tin offersList.
+     */
+    public function takeOffers(){
+        $offerList = array();
+
+        $stmt = $this->_connection->dbConnect()->prepare("SELECT Offer FROM offers WHERE Shop_ID = ? ");
+        $stmt->bind_param('i',$this->_Offer->getShop_ID());
+        $stmt->execute();
+        $stmt->bind_result($offers);
+        while($row = $stmt->fetch()){
+            $this->_Offer->setOffer($offers);
+            $offerList[] = $row;
+        }
+        echo json_encode($offerList);
+        $stmt->close();
+        $this->_connection->dbClose();
     }
 }
 /*
@@ -128,6 +140,7 @@ if($_POST){
         $updateProfile->mergeShopID();
         $updateProfile->takeOffer_ID();
         $updateProfile->insertOffer();
+        $updateProfile->takeOffers();
     }elseif(isset($_POST['Update'])){
         $updateProfile->setUpdatedProfileData();
         $updateProfile->updateProfileData();
